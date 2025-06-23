@@ -1,15 +1,4 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -155,7 +144,7 @@ h6 {
   background: var(--surface-color);
   border-radius: 50px;
   padding: 5px 25px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: none
 }
 
 .scrolled .header .header-container {
@@ -1031,7 +1020,19 @@ section,
   padding: 1rem 1.5rem;
   background-color: var(--surface-color);
   border-radius: 0.5rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.about .contact-info:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.about .contact-info:hover i,
+.about .contact-info:hover .contact-label,
+.about .contact-info:hover .contact-number {
+  color: var(--contrast-color);
 }
 
 .about .contact-info i {
@@ -1049,6 +1050,7 @@ section,
   font-weight: 600;
   margin: 0;
 }
+
 
 .about .image-wrapper {
   position: relative;
@@ -1374,7 +1376,7 @@ section,
 .features-2 .phone-mockup img {
   max-width: 300px;
   height: auto;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.05));
 }
 
 @media (max-width: 991.98px) {
@@ -2344,8 +2346,8 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
 }
 
 .feature-icon .icon-img {
@@ -2355,16 +2357,16 @@ section,
   display: block;
 }
 .icon-img {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   display: block;
 }
 
 .metiers-slider-container {
   position: absolute;
-  bottom: 8%; /* place le bloc vers le bas du téléphone */
-  left: 50%;
+  bottom: 5%; /* place le bloc vers le bas du téléphone */
+  left: 52%;
   transform: translateX(-50%);
   width: 180px;
   height: 90px;
